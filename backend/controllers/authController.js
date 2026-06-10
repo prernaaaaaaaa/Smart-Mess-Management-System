@@ -61,8 +61,8 @@ const loginUser = async (req, res) => {
         role: user.role,
         hostel: user.hostel   // 🔥 important
       },
-      "secretkey",
-      { expiresIn: "1d" }
+      process.env.JWT_SECRET,
+  { expiresIn: "1d" }
     );
 
     res.status(200).json({
