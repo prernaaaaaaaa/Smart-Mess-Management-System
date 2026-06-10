@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../services/api";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [scholarNumber, setScholarNumber] = useState("");
@@ -86,7 +87,19 @@ function Login() {
         >
           Login
         </button>
+         <p
+  style={{
+    marginTop: "15px",
+    textAlign: "center",
+  }}
+>
+  Don't have an account?{" "}
+  <Link to="/register">
+    Register
+  </Link>
+</p>
       </div>
+     
     </div>
   );
 }
