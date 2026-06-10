@@ -38,9 +38,9 @@ const scanMeal = async (req, res) => {
 
     // 🧾 Save transaction
     await Transaction.create({
-      userId: user._id,
+      user_id: user._id,
       amount: cost,
-      type: "debit",
+      type: "meal",
       description: `${mealType} meal`
     });
 
