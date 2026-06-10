@@ -1,8 +1,24 @@
+<<<<<<< HEAD
 node_modules
 .env
 dist
 build
 .DS_Store
 add gitignore
+=======
+node_modules/
+.env
+
+backend/node_modules/
+frontend/node_modules/
+
+backend/.env
+frontend/.env
+
+dist/
+build/
+
+.DS_Store
+>>>>>>> 20b2b4f70cc3153210ab158e426fa85b962da270
 
 
