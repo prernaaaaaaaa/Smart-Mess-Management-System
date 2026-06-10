@@ -99,21 +99,13 @@ function Register() {
             border: "1px solid #ccc",
           }}
         >
-          <option value="">
-            Select Hostel
-          </option>
+          <option value="">Select Hostel</option>
 
-          <option value="A Block">
-            A Block
-          </option>
-
-          <option value="B Block">
-            B Block
-          </option>
-
-          <option value="C Block">
-            C Block
-          </option>
+{Array.from({ length: 12 }, (_, i) => (
+  <option key={i + 1} value={`Hostel ${i + 1}`}>
+    Hostel {i + 1}
+  </option>
+))}
         </select>
 
         <button
